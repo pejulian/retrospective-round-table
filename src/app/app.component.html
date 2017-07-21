@@ -16,20 +16,29 @@
 
     <div class="col">
       <form>
-        
         <div class="form-group">
 
         </div>
-
         <div class="form-group">
           <label for="talkTime">Talk time</label>
           <input type="text" class="form-control" id="talkTime" aria-describedby="talkTimeHelp"/>
           <small id="talkTimeHelp" class="form-text text-muted">Set how long a team member is supposed to talk</small>
         </div>
-
       </form>
     </div>
+  </div>
 
+  <div class='row'>
+    <div class='col'>
+      <button (click)="startSpin()" type="button" class="btn btn-primary">Spin!</button>
+      <button (click)="resetWheel()" type="button" class="btn btn-danger">Reset</button>
+    </div>
+  </div>
+
+  <div class='row'>
+    <div class='col'>
+      <canvas id='canvas' width='600' height='600'></canvas>
+    </div>
   </div>
 
 </div>

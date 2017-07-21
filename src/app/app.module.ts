@@ -5,6 +5,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { WindowRef } from './app.services';
+
 @NgModule({
   declarations: [
     AppComponent
@@ -14,7 +16,11 @@ import { AppComponent } from './app.component';
     AppRoutingModule,
     NgbModule.forRoot()
   ],
-  providers: [],
-  bootstrap: [AppComponent]
+  providers: [
+  	WindowRef
+  ],
+  bootstrap: [
+  	AppComponent
+	]
 })
 export class AppModule { }
