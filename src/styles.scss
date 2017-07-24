@@ -6,3 +6,9 @@
 // Font awesome
 @import 'variables';
 @import '../node_modules/font-awesome/scss/font-awesome';
+
+
+// https://stackoverflow.com/questions/35578083/what-is-the-equivalent-of-ngshow-and-nghide-in-angular2
+[hidden] { 
+	display: none !important;
+}
